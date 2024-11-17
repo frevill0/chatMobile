@@ -11,6 +11,7 @@ $RECYCLE.BIN/
 
 *.log
 log.txt
+src/environments/environment.ts
 
 
 /.sourcemaps
@@ -68,3 +69,8 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json
