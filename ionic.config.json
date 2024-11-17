@@ -1,0 +1,7 @@
+{
+  "name": "geochat",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
