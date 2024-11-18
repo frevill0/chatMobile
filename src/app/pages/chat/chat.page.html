@@ -13,9 +13,17 @@
   <ion-grid>
     <ion-row *ngFor="let message of messages | async">
       <ion-col size="9" class="message" [offset]="message.myMsg ? 3 : 0"
-      [ngClass]="{'my-message': message.myMsg, 'other-message': !message.myMsg}">
+        [ngClass]="{'my-message': message.myMsg, 'other-message': !message.myMsg}">
         <b>{{ message.fromName }}</b><br>
-        <span>{{ message.msg }}</span>
+
+        <!-- Mostrar hipervínculo si el mensaje contiene un enlace -->
+        <ng-container *ngIf="isHyperlink(message.msg); else plainText">
+          <a [href]="message.msg" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">{{ message.msg }} </a>
+        </ng-container>
+        <ng-template #plainText>
+          <span>{{ message.msg }}</span>
+        </ng-template>
+
         <div class="time ion-text-right"><br>{{ message.createdAt?.toMillis() | date:'short'}}</div>
       </ion-col>
     </ion-row>
@@ -25,18 +33,21 @@
 <ion-footer>
   <ion-toolbar color="light">
     <ion-row class="ion-align-items-center">
-      <ion-col size="10">
-        <ion-textarea autoGrow="true" class="message-input" rows="1" maxLengt="500" [(ngModel)]="newMsg">
+      <ion-col size="8">
+        <ion-textarea autoGrow="true" class="message-input" rows="1" maxLengt="500" [(ngModel)]="newMsg" style="color: black; font-size: 16px;">
         </ion-textarea>
       </ion-col>
       <ion-col size="2">
-        <ion-button expand="block" fill="clear" color="primary" [disabled]="newMsg === ''"
-        class="msg-btn" (click)="sendMessage()">
-        <ion-icon name="send" slot="icon-only"></ion-icon>
+        <ion-button expand="block" fill="clear" color="secondary" (click)="sendLocation()">
+          <ion-icon name="location" slot="icon-only"></ion-icon>
         </ion-button>
       </ion-col>
-
+      <ion-col size="2">
+        <ion-button expand="block" fill="clear" color="primary" [disabled]="newMsg === ''"
+          class="msg-btn" (click)="sendMessage()">
+          <ion-icon name="send" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-col>
     </ion-row>
-
   </ion-toolbar>
 </ion-footer>
