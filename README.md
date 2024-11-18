@@ -66,10 +66,16 @@
   </li>
 </ol>
 
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/4deade5d-340d-4655-9cbf-6c0265f083b7" alt="image1" width="200"></td>
+      <td><img src="https://github.com/user-attachments/assets/fb8222f0-a9a0-459c-ab6e-4be86f8b2570" alt="WhatsApp Image" width="200"></td>
+      <td><img src="https://github.com/user-attachments/assets/0cae6147-7a20-4324-8c64-ddf970ebe074" alt="image2" width="200"></td>
+    </tr>
+  </table>
+</div>
 
-![image](https://github.com/user-attachments/assets/4deade5d-340d-4655-9cbf-6c0265f083b7)
-![image](https://github.com/user-attachments/assets/d122b43c-e18e-4417-b2db-056c6861236f)
-![image](https://github.com/user-attachments/assets/0cae6147-7a20-4324-8c64-ddf970ebe074)
 
 
 
