@@ -1,38 +1,67 @@
-📱 Aplicación de Chat con Geolocalización
-Esta es una aplicación móvil desarrollada en Ionic que combina funcionalidades de chat y geolocalización. Está integrada con Firebase para la autenticación de usuarios y el manejo en tiempo real de mensajes y datos. Los usuarios pueden enviar su ubicación actual a través del chat utilizando el plugin de Geolocalización de Ionic.
+<h1 align="center">📱 Aplicación de Chat con Geolocalización</h1>
 
-🛠️ Tecnologías Utilizadas
-Ionic Framework: Para la creación de la interfaz y la experiencia de usuario.
-Firebase:
-Authentication: Gestión de usuarios (registro e inicio de sesión).
-Firestore: Base de datos en tiempo real para mensajes.
-Geolocation Plugin: Obtenido de Ionic Native Geolocation.
-Capacitor: Para acceder a las funcionalidades nativas del dispositivo.
-✨ Características
-Autenticación con Firebase:
+<p>
+  Esta es una <strong>aplicación móvil</strong> desarrollada en <strong>Ionic</strong> que combina funcionalidades de chat y geolocalización. Está integrada con <strong>Firebase</strong> para la autenticación de usuarios y el manejo en tiempo real de mensajes y datos. Los usuarios pueden <strong>enviar su ubicación actual</strong> a través del chat utilizando el plugin de Geolocalización de Ionic.
+</p>
 
-Registro e inicio de sesión con correo y contraseña.
-Sesión segura gestionada por Firebase Authentication.
-Chat en tiempo real:
+---
 
-Envío y recepción de mensajes instantáneos utilizando Firebase Firestore.
-Envío de ubicación:
+<h2>🛠️ Tecnologías Utilizadas</h2>
+<ul>
+  <li><strong>Ionic Framework</strong>: Para la creación de la interfaz y la experiencia de usuario.</li>
+  <li><strong>Firebase</strong>:
+    <ul>
+      <li><strong>Authentication</strong>: Gestión de usuarios (registro e inicio de sesión).</li>
+      <li><strong>Firestore</strong>: Base de datos en tiempo real para mensajes.</li>
+    </ul>
+  </li>
+  <li><strong>Geolocation Plugin</strong>: Obtenido de <a href="https://ionicframework.com/docs/native/geolocation" target="_blank">Ionic Native Geolocation</a>.</li>
+  <li><strong>Capacitor</strong>: Para acceder a las funcionalidades nativas del dispositivo.</li>
+</ul>
 
-Los usuarios pueden compartir su ubicación actual en el chat.
-Los datos de ubicación se obtienen a través del plugin de Geolocalización de Ionic y se presentan en el chat con un enlace a Google Maps.
-Interfaz intuitiva:
+---
 
-Diseño minimalista y responsivo para dispositivos móviles.
+<h2>✨ Características</h2>
+<ol>
+  <li><strong>Autenticación con Firebase:</strong>
+    <ul>
+      <li>Registro e inicio de sesión con correo y contraseña.</li>
+      <li>Sesión segura gestionada por Firebase Authentication.</li>
+    </ul>
+  </li>
+  <li><strong>Chat en tiempo real:</strong>
+    <ul>
+      <li>Envío y recepción de mensajes instantáneos utilizando Firebase Firestore.</li>
+    </ul>
+  </li>
+  <li><strong>Envío de ubicación:</strong>
+    <ul>
+      <li>Los usuarios pueden compartir su ubicación actual en el chat.</li>
+      <li>Los datos de ubicación se obtienen a través del plugin de Geolocalización de Ionic y se presentan en el chat con un enlace a Google Maps.</li>
+    </ul>
+  </li>
+  <li><strong>Interfaz intuitiva:</strong>
+    <ul>
+      <li>Diseño minimalista y responsivo optimizado para dispositivos móviles.</li>
+    </ul>
+  </li>
+</ol>
 
-🌐 Cómo Funciona
-Inicio de sesión:
-Los usuarios deben autenticarse para acceder al chat.
+---
 
-Mensajería:
-
-Escribe y envía mensajes instantáneos.
-Visualiza los mensajes en tiempo real gracias a Firestore.
-Enviar ubicación:
-
-Haz clic en el ícono de ubicación en el chat.
-La app obtiene la ubicación actual y envía un enlace que puede abrirse en Google Maps.
+<h2>🌐 Cómo Funciona</h2>
+<ol>
+  <li><strong>Inicio de sesión:</strong> Los usuarios deben autenticarse para acceder al chat.</li>
+  <li><strong>Mensajería:</strong>
+    <ul>
+      <li>Escribe y envía mensajes instantáneos.</li>
+      <li>Visualiza los mensajes en tiempo real gracias a Firestore.</li>
+    </ul>
+  </li>
+  <li><strong>Enviar ubicación:</strong>
+    <ul>
+      <li>Haz clic en el ícono de ubicación en el chat.</li>
+      <li>La app obtiene la ubicación actual y envía un enlace que puede abrirse en Google Maps.</li>
+    </ul>
+  </li>
+</ol>
